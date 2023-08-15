@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+.nav-container{
+    width:100vw;
+background: #F05A22;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-container .menu{
+    background:white;
+    border-radius:30px;
+    padding:10px;
+    margin:5px auto;
+    
+}
+.nav-container .menu a{
+    margin:30px;
+}
+.nav-container h5{
+    color:white;
+}
+.home-container{
+    background: rgb(232, 232, 232);
+    padding: 20px;
+}
+.home-container input{
+    width:95vw;
+   padding:10px;
+}
+.home-container h2{
+    margin-bottom:10px;
+}
+.cardsContainer{
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    gap:20px;
+    padding:30px;
+}
+.cardContainer{
+    width: 300px;
+    height:250px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid black;
+    padding:20px;
+}
+.cardContainer img{
+    width:inherit;
+    height:150px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0,0.4);
+}
+.cardContainer a{
+    text-decoration: none;
+    color:#F05A22;
+}
+.cardContainer p{
+display: inline;
+}
+.cardContainer .arrowDiv{
+    background:#F05A22;
+    color:white;
+    width:50px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cardContainer .details{
+    display:flex;
+}
+.btnContainer{
+    position:absolute;
+    top:6rem;
+    left: 20rem;
+    margin:10px;
+}
+.btnContainer button{
+    margin:5px;
+    width:90px;
+    background-color: white;
+    border:none;
+}
+.btnContainer  .changed{
+    background: #F05A22;
+    color:white;
+    padding:5px;
+}
+.detailsContainer{
+    padding:10px;
+}
+.showingDiv img{
+    width:20rem;
+    height:20rem;
+    border-radius: 30px;
+}
+.msgbody{
+    position: absolute;
+    font-size: 14px;
+    top:10rem;
+    left:20rem;
+    margin:10px;
+    color:gray
+}
+@media screen and (max-width:767px){
+ .cardsContainer{
+    width:fit-content;
+    grid-template-columns: repeat(1,100%);
+}   
+.cardContainer{
+    width:15rem;
+}
+.cardContainer input{
+    width:inherit;
+}
+.nav-container .menu a{
+    margin:10px;
+}
+.home-container input{
+    width:18rem;
+}
+.detailsContainer{
+    width: fit-content;
+}
+.showingDiv{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.showingDiv img{
+    width:12rem;
+    height:10rem;
+}
+
+}
+@media  (min-width:768px) and (max-width:1100px){
+    .cardsContainer{
+        width:fit-content;
+       grid-template-columns: repeat(2,50%);
+   }   
+   .cardContainer{
+       width:15rem;
+   }
+   .cardContainer input{
+       width:inherit;
+   }
+  .detailsContainer .showingDiv{
+    width:fit-content;
+   }
+   }
